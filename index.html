@@ -7,17 +7,19 @@
 </head>
 <body>
     <h1>Backlog test</h1>
-
-    <!--Form section-->
-    <div>
-        <h2>Add to your backlog</h2><hr>
-        <form action="" method="post">
-            <label for="title"><b>Title:</b></label><br>
-            <input type="text" name="title" id="title"><br>
-            <label for="platform"><b>Platform:</b></label><br>
-            <input type="text" name="platform" id="platform">
-        </form><hr>
-    </div>
+    <main>
+        <article>
+            <form action="https://script.google.com/macros/s/AKfycbxSTvHzWgNq_Z11HrQjwr-UAuv1Yjh4vfBERrtYCDAy0siIrIXjGlbqnh-naLfp3UL-sg/exec" method="post">
+                <h2>Add to your backlog</h2>
+                <label for="gametitle" id="title" required>Title</label>
+                <input type="text" name="gametitle" id="title"><hr>
+                <label for="gameplatform" id="platform" required>Platform</label>
+                <input type="text" name="platform" id="platform">
+                <button type="submit">Save to your backlog</button>
+            </form>
+            
+        </article>
+    </main>
     <div>
         <p><a href="backlog.html" target="_blank">Go to backlog...</a></p>
     </div>
