@@ -25,13 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
         let formData = new FormData(form);
 
         //Envia los datos a Google usando fetch
-        fetch('https://script.google.com/macros/s/AKfycbxSTvHzWgNq_Z11HrQjwr-UAuv1Yjh4vfBERrtYCDAy0siIrIXjGlbqnh-naLfp3UL-sg/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbxcUdUr1yyoIqJPk2WOmtwwSMo4n8I03wKaeo-HrGM2Xsr-Y5zmNxGdUP2pR14sM6wqYQ/exec', {
             method: 'POST',
             body: formData
         })
         .then(response => {
             if (response.ok) {
                 console.log('Formulario enviado correctamente');
+                window.alert('Save data complete');
             } else {
                 console.error('Error al enviar form');
             }
@@ -40,10 +41,23 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error en la slicitud:', error);
         });
     });
-
+    //procesa la búsqueda para hltb
     document.getElementById('search').addEventListener('click', ()=>{
         processSearch();        
     });
+
+    document.getElementById('viewBacklog').addEventListener('click', ()=>{
+        fetch('https://script.google.com/macros/s/AKfycbxcUdUr1yyoIqJPk2WOmtwwSMo4n8I03wKaeo-HrGM2Xsr-Y5zmNxGdUP2pR14sM6wqYQ/exec')
+        .then(response => response.json())
+        .then(data => {
+          // Aquí puedes procesar los datos recibidos, por ejemplo, mostrarlos en tu página
+          console.log(data); // Muestra los datos en la consola para verificar
+        })
+        .catch(error => {
+          console.error('Error al obtener los datos:', error);
+        });
+    });
+
 });
 
 
