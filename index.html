@@ -11,10 +11,13 @@
         <article>
             <form action="https://script.google.com/macros/s/AKfycbxSTvHzWgNq_Z11HrQjwr-UAuv1Yjh4vfBERrtYCDAy0siIrIXjGlbqnh-naLfp3UL-sg/exec" method="post">
                 <h2>Add to your backlog</h2>
-                <label for="gametitle" id="title" required>Title</label>
+                <label for="gametitle" name="title">Title</label>
                 <input type="text" name="gametitle" id="title"><hr>
-                <label for="gameplatform" id="platform" required>Platform</label>
-                <input type="text" name="platform" id="platform">
+                <label for="gameplatform" id="platform">Platform</label>
+                <input type="text" name="platform" id="platform"><hr>
+                <label for="time" id="totaltime">Hours to beat</label>
+                <input type="text" name="totaltime" id="totaltime"><br>
+                <button type="button" id="search">View in howlongtobeat</button> 
                 <button type="submit">Save to your backlog</button>
             </form>
             
@@ -24,4 +27,5 @@
         <p><a href="backlog.html" target="_blank">Go to backlog...</a></p>
     </div>
 </body>
+<script src="js/scripts.js"></script>
 </html>
