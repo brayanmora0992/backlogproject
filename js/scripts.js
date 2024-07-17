@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
         .catch(error => {
-            console.error('Error en la slicitud:', error);
+            console.error('Error en la solicitud:', error);
         });
     });
     //procesa la búsqueda para hltb
