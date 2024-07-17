@@ -7,9 +7,18 @@
 </head>
 <body>
     <h1>The Backlog</h1>
+    <label for="filterName">Filtrar por nombre</label>
+    <input type="text" id="filterName" onkeyup="filterTable()">
+    <button id="sortButton" onclick="sortTableByDuration()">Ordenar por duración</button>
+    <div id="loadingIndicator">
+        <div class="spinner"></div> Cargando...
+    </div>
     <article>
         <table id="backlog" class="tablita">
             <thead>
+                <th>Title</th>
+                <th>Platform</th>
+                <th>Total Time</th>
             </thead>
             <tbody>
                 <!--contenido de la tabla-->
