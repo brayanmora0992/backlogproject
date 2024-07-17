@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //crea la fila de encabezado de la tabla
     createTableHeaders();
 
-    fetch('https://script.google.com/macros/s/AKfycbxrhL7un2AE62e5r1NEbUNctgTtEPZHeu4IR3mnBW5ERD349KYWV63SOhAR8XImxafmlg/exec')
+    fetch('https://script.google.com/macros/s/AKfycbw5IGxglhIn2f-osGAuGVwMLZWPKagAbM1fjGt9VkuP5j_dQHEUasYdqbF67MzWZYUZ7g/exec')
     .then(response => response.json())
     .then(data => {
       console.log(data);
