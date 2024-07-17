@@ -1,0 +1,12 @@
+.tablita {
+    border:1px solid black;
+    border-collapse: collapse;
+    /*margin: auto;*/
+    
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 10;
+    text-align: center;
+}
