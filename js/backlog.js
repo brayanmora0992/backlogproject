@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Crea la fila de encabezado de la tabla
     createTableHeaders();
 
-    fetch('https://script.google.com/macros/s/AKfycbzENz8swarJwmc6_Sxbbf6xsyI89XrMs6o7dm_3Ef-3YZbP2CRgAqmIQeRzx3S6usAlVg/exec')
+    fetch('https://script.google.com/macros/s/AKfycbz9_ZiGppkoI9Z0iY1AZ5JB2Eo5BlftEG_uxH9bGYj9ijBTHc_3UkWmInbrQiFIxxg2RQ/exec')
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -74,7 +74,7 @@ function sortTableByDuration() {
 }
 
 function markAsCompleted(gametitle) {
-    fetch('https://script.google.com/macros/s/AKfycbzENz8swarJwmc6_Sxbbf6xsyI89XrMs6o7dm_3Ef-3YZbP2CRgAqmIQeRzx3S6usAlVg/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbz9_ZiGppkoI9Z0iY1AZ5JB2Eo5BlftEG_uxH9bGYj9ijBTHc_3UkWmInbrQiFIxxg2RQ/exec', {
         method: 'POST',
         body: JSON.stringify({ gametitle: gametitle, platform: "", totaltime: "" }), // Incluye los parámetros necesarios
         headers: {
