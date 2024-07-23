@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let formData = new FormData(form);
 
         //Envia los datos a Google usando fetch
-        fetch('https://script.google.com/macros/s/AKfycbyZUosiONh5Ms222esAc9jn1DF3ucCo9d6vqxLqkPkB9-TLiymWSjD7Z1RKrcdmAOg92A/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbw1T8gq8qbhMDfuto2pW9O1zrxGsdwMbPA30qQtgItd7zUcnSl_jsSnn2XtC9sEzprlvQ/exec', {
             method: 'POST',
             body: formData
         })

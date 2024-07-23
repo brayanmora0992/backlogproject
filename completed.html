@@ -1,20 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Completed Games</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>The Backlog</h1>
-    <label for="filterName">Filtrar por nombre</label>
-    <input type="text" id="filterName" onkeyup="filterTable()">
-    <button id="sortButton" onclick="sortTableByDuration()">Ordenar por duración</button>
+    <h1>Completed Games</h1>
     <div id="loadingIndicator">
         <div class="spinner"></div>
     </div>
     <article>
-        <table id="backlog" class="tablita">
+        <table id="completed" class="tablita">
             <thead>
             </thead>
             <tbody>
@@ -23,8 +21,6 @@
         </table>
     </article>
     <p><a href="index.html">Start page</a></p>
-    <p><a href="completed.html">Completed page</a></p>
-    
+    <script src="js/completed.js"></script>
 </body>
-<script src="js/backlog.js"></script>
 </html>
