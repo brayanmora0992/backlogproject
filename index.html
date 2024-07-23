@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,18 @@
     <title>Backlog project</title>
 </head>
 <body>
-    <h1>Backlog test</h1>
+    <header>
+        <h1>Backlog test</h1>
+        <nav>
+            <ul>
+                <li><a href="backlog.html">Go to backlog</a></li>
+                <li><a href="completed.html">Go to completed</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main>
-        <article>
+        <section>
             <form action="https://script.google.com/macros/s/AKfycbw1T8gq8qbhMDfuto2pW9O1zrxGsdwMbPA30qQtgItd7zUcnSl_jsSnn2XtC9sEzprlvQ/exec" method="post" id="backlogForm">
                 <h2>Insert title</h2>
                 <label for="title" name="title">Title</label>
@@ -31,36 +41,12 @@
                 
                 <button type="submit" id="saveToBacklog">Add to backlog</button><br>
             </form>
-        </article>
+        </section>
         <hr>
     </main>
     <div>
-        <p><a href="backlog.html">Go to backlog...</a></p>
+        <p><a href="backlog.html">Go to backlog</a></p>
     </div>
 </body>
 <script src="js/scripts.js"></script>
 </html>
-
-
-
-
-
-
-
-<!--<article>
-    <form action="https://script.google.com/macros/s/AKfycbxrhL7un2AE62e5r1NEbUNctgTtEPZHeu4IR3mnBW5ERD349KYWV63SOhAR8XImxafmlg/exec" method="post" id="backlogForm">
-        <h2>Add to your backlog</h2>
-        <label for="title" name="title">Title</label>
-        <input type="text" name="gametitle" id="title" required><hr>
-        <label for="platform" name="platform">Platform</label>
-        <input type="text" name="platform" id="platform" required><hr>
-
-        <label for="totaltime" name="totaltime">Hours to beat</label>
-        <input type="text" name="totaltime" id="totaltime" required><br>
-
-        <button type="button" id="search">View in howlongtobeat</button> 
-        
-        <button type="submit" id="saveToBacklog">Save to your backlog</button><br>
-        <button type="button" id="viewBacklog">ver backlog</button>
-    </form>
-</article>
