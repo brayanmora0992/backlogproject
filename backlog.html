@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>The Backlog</h1>
-    <label for="filterName">Filtrar por nombre</label>
-    <input type="text" id="filterName" onkeyup="filterTable()">
-    <button id="sortButton" onclick="sortTableByDuration()">Ordenar por duración</button>
+    
+    
     <div id="loadingIndicator">
         <div class="spinner"></div>
     </div>
-    <article>
+    <section>
+        <h1>The Backlog</h1>
+        <label for="filterName">Filtrar por nombre</label>
+        <input type="text" id="filterName" onkeyup="filterTable()">
+        <button id="sortButton" onclick="sortTableByDuration()">Ordenar por duración</button>
         <table id="backlog" class="tablita">
             <thead>
             </thead>
@@ -22,10 +24,11 @@
                 <!--contenido de la tabla-->
             </tbody>
         </table>
-    </article>
+    </section>
     <p><a href="index.html">Start page</a></p>
     <p><a href="completed.html">Completed page</a></p>
     
+    <script src="js/backlog.js"></script>
 </body>
-<script src="js/backlog.js"></script>
+
 </html>
