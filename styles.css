@@ -1,9 +1,24 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/stopwatch.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/games.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/file-add.css');
+
 .tablita {
     border:1px solid black;
     border-collapse: collapse;
     /*margin: auto;*/
     
 }
+
+body {
+    font-size: 100%;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+label, input {
+    margin-bottom: 1em;
+}
+
 
 th,td{
     border: 1px solid black;
@@ -34,3 +49,25 @@ th,td{
         transform: rotate(360deg);
     }
 }
+
+.round-borders {
+    border-radius: 4px;
+    padding-left: 1em;
+}
+
+
+.gg-games {
+    margin-right: 1em;
+    float:left;
+}
+
+.gg-file-add {
+    margin-right: 1.6em;
+    float: left;
+}
+
+.gg-stopwatch {
+    margin-right: 1.4em;
+    float: left;
+}
+
