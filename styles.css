@@ -9,11 +9,11 @@
     
 }
 
-/*body {
+body {
     font-size: 100%;
-    margin-left: 5em;
-    margin-right: 5em;
-}*/
+    /*margin-left: 5em;
+    margin-right: 5em;*/
+}
 
 label, input {
     margin-bottom: 1em;
