@@ -71,3 +71,7 @@ th,td{
     float: left;
 }
 
+a:hover, a:focus {
+    color: red;
+}
+
