@@ -9,31 +9,43 @@
     
 }
 
+body {
+    font-size: 100%;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
 header {
     text-align: center;
-    
+    background-color: lightgreen;
 }
 
 /*probando main*/
 main {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 1em;
-    margin: auto;
+    background-color: lightblue;
+
 }
 
 section {
+    background-color: lightyellow;
+    width: 87.5%; /*875 / 960 * 100*/
+    padding: 3.125%; /*120/960 * 100*/
+    margin: 0 auto;
+    
+}
+
+
+form h2 {
     text-align: center;
 }
+
 
 /*remove bullet points*/
 
 ul {
     list-style-type: none;
-}
-
-body {
-    font-size: 100%;
 }
 
 label, input {
