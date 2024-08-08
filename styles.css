@@ -11,7 +11,7 @@
 
 body {
     font-size: 100%;
-    width: 90%;
+    width: 90vw;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -30,8 +30,8 @@ main {
 
 section {
     background-color: lightyellow;
-    width: 87.5%; /*875 / 960 * 100*/
-    padding: 3.125%; /*120/960 * 100*/
+    width: 93.75%; /*900 / 960 * 100*/
+    padding: 0 3.125%; /*30/960 * 100*/
     margin: 0 auto;
     
 }
