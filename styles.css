@@ -12,7 +12,7 @@
 body {
     font-size: 100%;
     width: 90vw;
-    max-width: 960px;
+    max-width: 3840px;
     margin: 0 auto;
 }
 
@@ -25,15 +25,16 @@ header {
 /*probando main*/
 main {
     background-color: lightblue;
+    height: 100vh;
 
 }
 
 section {
     background-color: lightyellow;
-    width: 93.75%; /*900 / 960 * 100*/
-    padding: 0 3.125%; /*30/960 * 100*/
+    width: 90vw;
+    padding: 0 3.125vw;
     margin: 0 auto;
-    
+    box-sizing: border-box;
 }
 
 
@@ -108,4 +109,22 @@ th,td{
 a:hover, a:focus {
     color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
