@@ -21,11 +21,15 @@
     src: url('/resources/optima-nova-lt-pro/OptimaNovaLTProLight.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+
 }
 
-/* Aplica la fuente customizada para todos los elementos */
+/****************************************************************************************************************************************/
+/*Aplica la fuente customizada para todos los elementos*/
 * {
     font-family: 'Optima', sans-serif;
+    
+    
 }
 
 *, *::before, *::after {
@@ -34,20 +38,10 @@
     padding: 0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-header {
-    width: 100vw;
-    background-color: black;
-    position: sticky;
-    top: 0; /* Fija el header en la parte superior */
-    z-index: 10;
+.tablita {
+    border:1px solid black;
+    border-collapse: collapse;
+    /*margin: auto;*/
 }
 
 ul {
@@ -60,32 +54,36 @@ ul {
 li a {
     text-decoration: none;
     color: white;
+    
 }
 
 li {
     list-style: none;
     padding: 10px;
     border: 1px solid black;
+    
+}
+
+header {
+    width: 100vw;
+    background-color: black;
+    
+    
 }
 
 main {
-    flex: 1; /* Ocupa el espacio restante después del header */
-    display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
     background-color: lightgray;
-}
-
-section {
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
-    background-color: rgb(231, 230, 230);
-    border-radius: 1vh;
-    padding-top: 20px;
-    padding-bottom: 20px;
+}
+
+body {
+    width: 100vw;
+    max-width: 1920px;
+    background-color: lightgray;
+    margin: 0 auto;
 }
 
 form {
@@ -93,12 +91,14 @@ form {
     flex-direction: column;
     width: 95vw;
     max-width: 100vw;
+    margin: auto;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
 }
 
 .input-group {
@@ -107,6 +107,7 @@ form {
     align-items: center;
     margin-bottom: 2vw;
 }
+
 
 .input-group i {
     margin-right: 1vw;
@@ -119,21 +120,18 @@ form {
     justify-content: center;
     flex-direction: column;
     margin: auto;
+
 }
 
 .button-group button {
     margin-bottom: 1vw;
+    
 }
 
 .button-style {
     border-style: none;
     border-radius: 5px;
     padding: 5px 20px;
-    background-color: black;
-}
-
-button {
-    color: white;
 }
 
 h2 {
@@ -143,9 +141,10 @@ h2 {
     font-family: 'Ring', sans-serif;
 }
 
-th, td {
+
+th,td{
     border: 1px solid black;
-    padding: 10px;
+    padding: 10;
     text-align: center;
 }
 
@@ -164,9 +163,8 @@ th, td {
     animation: spin 1s linear infinite;
     display: inline-block;
 }
-
 @keyframes spin {
-    0% {
+    0%{
         transform: rotate(0deg);
     }
     100% {
@@ -183,3 +181,22 @@ th, td {
 a:hover, a:focus {
     color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
