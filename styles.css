@@ -2,16 +2,40 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/games.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/file-add.css');
 
+@font-face {
+    font-family: 'Ring';
+    src: url('/resources/Mantinia-Regular/elden-ring.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('/resources/optima-nova-lt-pro/OptimaNovaLTProRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima-light';
+    src: url('/resources/optima-nova-lt-pro/OptimaNovaLTProLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/****************************************************************************************************************************************/
+
+* {
+    font-family: 'Optima', sans-serif;
+}
+
 .tablita {
     border:1px solid black;
     border-collapse: collapse;
     /*margin: auto;*/
     
 }
-
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/stopwatch.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/games.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/file-add.css');
 
 ul {
     display: flex;
@@ -83,6 +107,7 @@ form {
 
 form h2 {
     text-align: center;
+    font-family: 'Ring', sans-serif;
 }
 
 
@@ -119,6 +144,7 @@ th,td{
 .round-borders {
     border-radius: 4px;
     padding-left: 1em;
+    font-family: 'Optima-light', sans-serif;
 }
 
 a:hover, a:focus {
