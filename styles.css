@@ -4,21 +4,21 @@
 
 @font-face {
     font-family: 'Ring';
-    src: url('/resources/Mantinia-Regular/elden-ring.otf') format('opentype');
+    src: url('../resources/Mantinia-Regular/elden-ring.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Optima';
-    src: url('/resources/optima-nova-lt-pro/OptimaNovaLTProRegular.otf') format('opentype');
+    src: url('../resources/optima-nova-lt-pro/OptimaNovaLTProRegular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Optima-light';
-    src: url('/resources/optima-nova-lt-pro/OptimaNovaLTProLight.otf') format('opentype');
+    src: url('../resources/optima-nova-lt-pro/OptimaNovaLTProLight.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
