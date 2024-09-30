@@ -99,6 +99,7 @@ function addCompleteButton(row, gametitle, platform) {
     let cell = row.insertCell(3);
     let button = document.createElement('button');
     button.textContent = 'Finished';
+    button.className = 'colorcito';
     button.onclick = () => markAsCompleted(gametitle, platform); // Actualizar el evento del botón para incluir plataforma
     cell.appendChild(button);
 }
